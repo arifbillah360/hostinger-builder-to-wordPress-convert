@@ -4,7 +4,7 @@ A professional WordPress theme for TWK Rheinland - Tim Wassong, a German climate
 
 ## 📋 About
 
-This repository contains a complete WordPress theme ready for installation and use. The theme features responsive design, German language support, custom page templates, and optimized asset loading specifically designed for a climate and cooling technology business.
+This repository contains a complete WordPress theme ready for installation. All theme files are in the root directory for easy deployment. The theme features responsive design, German language support, custom page templates, and optimized asset loading specifically designed for a climate and cooling technology business.
 
 ## 🚀 Quick Start
 
@@ -19,11 +19,21 @@ This repository contains a complete WordPress theme ready for installation and u
 1. **Download the Theme**
    ```bash
    git clone https://github.com/arifbillah360/hostinger-builder-to-wordPress-convert.git
+   cd hostinger-builder-to-wordPress-convert
    ```
 
-2. **Copy to WordPress**
+2. **Copy to WordPress Themes Directory**
    ```bash
-   cp -r wp-content/themes/twk-rheinland /path/to/your/wordpress/wp-content/themes/
+   # Copy entire directory to WordPress themes folder
+   cp -r ../hostinger-builder-to-wordPress-convert /path/to/wordpress/wp-content/themes/twk-rheinland
+   ```
+
+   Or via ZIP:
+   ```bash
+   # Create a ZIP file
+   zip -r twk-rheinland.zip . -x "*.git*"
+
+   # Upload via WordPress Dashboard → Appearance → Themes → Add New → Upload Theme
    ```
 
 3. **Activate**
@@ -108,7 +118,7 @@ Create the following pages with respective templates:
 ## 📁 Theme Structure
 
 ```
-wp-content/themes/twk-rheinland/
+twk-rheinland/ (root)
 ├── assets/
 │   ├── css/           # Page-specific stylesheets (4 files)
 │   ├── js/            # JavaScript files (12 files)
@@ -133,7 +143,7 @@ wp-content/themes/twk-rheinland/
 ├── page-about.php     # About page template
 ├── page-services.php  # Services page template
 ├── page-contact.php   # Contact page template
-└── README.md          # Theme documentation
+└── README.md          # This file
 ```
 
 ## 🔌 Recommended Plugins
@@ -249,7 +259,7 @@ The theme follows WordPress accessibility standards:
 For theme support and issues:
 
 - **GitHub Issues:** [Open an issue](https://github.com/arifbillah360/hostinger-builder-to-wordPress-convert/issues)
-- **Documentation:** See theme README.md in `/wp-content/themes/twk-rheinland/`
+- **Documentation:** See this README file
 
 ## 📝 Changelog
 
@@ -262,9 +272,10 @@ For theme support and issues:
 - ✨ Responsive design
 - ✨ Asset optimization
 - ✨ Widget areas
-- ✨ Menu locations
+- ✅ Menu locations
 - ✨ German language support
 - ✨ 107 files with complete theme functionality
+- ✨ Flat directory structure for easy deployment
 
 ## 👨‍💻 Development
 
@@ -279,6 +290,7 @@ This theme was professionally converted from a Hostinger Website Builder static 
 5. ✅ Creating custom page templates
 6. ✅ Adding WordPress-specific features (menus, widgets, customizer)
 7. ✅ Optimizing performance and asset loading
+8. ✅ Flattening directory structure for easy deployment
 
 ### Contributing
 
