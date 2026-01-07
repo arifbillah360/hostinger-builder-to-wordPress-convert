@@ -6,6 +6,12 @@ A professional WordPress theme for TWK Rheinland - Tim Wassong, a German climate
 
 This repository contains a complete WordPress theme ready for installation. All theme files are in the root directory for easy deployment. The theme features responsive design, German language support, custom page templates, and optimized asset loading specifically designed for a climate and cooling technology business.
 
+## ⚠️ IMPORTANT: Read Installation Guide First!
+
+**Before using this theme, please read the [INSTALLATION.md](INSTALLATION.md) file for detailed setup instructions.**
+
+This theme was converted from Hostinger Website Builder and requires proper setup to work correctly.
+
 ## 🚀 Quick Start
 
 ### Requirements
@@ -25,20 +31,28 @@ This repository contains a complete WordPress theme ready for installation. All 
 2. **Copy to WordPress Themes Directory**
    ```bash
    # Copy entire directory to WordPress themes folder
-   cp -r ../hostinger-builder-to-wordPress-convert /path/to/wordpress/wp-content/themes/twk-rheinland
+   cp -r . /path/to/wordpress/wp-content/themes/twk-rheinland
    ```
 
-   Or via ZIP:
-   ```bash
-   # Create a ZIP file
-   zip -r twk-rheinland.zip . -x "*.git*"
+3. **Follow Setup Instructions**
+   - Read [INSTALLATION.md](INSTALLATION.md) for complete setup guide
+   - Activate theme in WordPress
+   - Create required pages
+   - Set up navigation menu
+   - Add content
 
-   # Upload via WordPress Dashboard → Appearance → Themes → Add New → Upload Theme
-   ```
+### Quick Setup Checklist
 
-3. **Activate**
-   - Go to WordPress Dashboard → Appearance → Themes
-   - Find "TWK Rheinland" and click "Activate"
+- [ ] Copy theme to `/wp-content/themes/twk-rheinland/`
+- [ ] Activate theme in WordPress Dashboard
+- [ ] Create pages: Home, Über uns, Leistungen, Kontakt
+- [ ] Assign page templates to each page
+- [ ] Set Home as front page (Settings → Reading)
+- [ ] Create navigation menu
+- [ ] Install Contact Form 7 plugin
+- [ ] Add content to all pages
+
+**📖 Full instructions:** See [INSTALLATION.md](INSTALLATION.md)
 
 ## ✨ Theme Features
 
