@@ -13,15 +13,15 @@ get_header();
 
 <main id="primary" class="site-main">
 
-    <!-- Hero Section -->
-    <section class="hero-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 80px 20px; text-align: center; color: white;">
+    <!-- Hero Section with Background Image -->
+    <section class="hero-section" style="background: linear-gradient(rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9)), url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/home/photo-1684674452842-5f5bb4004bd8') center/cover; padding: 120px 20px; text-align: center; color: white;">
         <div class="container" style="max-width: 1200px; margin: 0 auto;">
-            <h1 style="font-size: 48px; margin-bottom: 20px; font-weight: 700;">TWK Rheinland</h1>
-            <h2 style="font-size: 32px; margin-bottom: 30px; font-weight: 400;">Kälte- und Klimatechnik Experten</h2>
-            <p style="font-size: 20px; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <h1 style="font-size: 56px; margin-bottom: 20px; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">TWK Rheinland</h1>
+            <h2 style="font-size: 36px; margin-bottom: 30px; font-weight: 400;">Kälte- und Klimatechnik Experten</h2>
+            <p style="font-size: 22px; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
                 Professionelle Lösungen für Klimaanlagen, Kältetechnik und Gebäudetechnik
             </p>
-            <a href="<?php echo esc_url( home_url( '/kontakt' ) ); ?>" class="btn-primary" style="background: white; color: #667eea; padding: 15px 40px; text-decoration: none; border-radius: 30px; display: inline-block; font-weight: 600; font-size: 18px;">
+            <a href="<?php echo esc_url( home_url( '/kontakt' ) ); ?>" class="btn-primary" style="background: white; color: #667eea; padding: 18px 45px; text-decoration: none; border-radius: 30px; display: inline-block; font-weight: 600; font-size: 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
                 Kontaktieren Sie uns
             </a>
         </div>
@@ -37,36 +37,51 @@ get_header();
 
             <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
                 <!-- Service 1 -->
-                <div class="service-card" style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
-                    <div class="service-icon" style="width: 80px; height: 80px; background: #e6f4ff; border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 40px;">
-                        ❄️
+                <div class="service-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                    <div style="height: 200px; overflow: hidden;">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/home/photo-1574334292321-4844f63aefef" alt="Klimareparatur" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <h3 style="font-size: 24px; margin-bottom: 15px; color: #333;">Klimareparatur</h3>
-                    <p style="color: #666; font-size: 16px; line-height: 1.6;">
-                        Schnelle und fachgerechte Reparaturen für Ihre Klimaanlagen.
-                    </p>
+                    <div style="padding: 30px; text-align: center;">
+                        <div class="service-icon" style="width: 70px; height: 70px; background: #e6f4ff; border-radius: 50%; margin: -50px auto 20px; display: flex; align-items: center; justify-content: center; font-size: 35px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                            ❄️
+                        </div>
+                        <h3 style="font-size: 24px; margin-bottom: 15px; color: #333;">Klimareparatur</h3>
+                        <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                            Schnelle und fachgerechte Reparaturen für Ihre Klimaanlagen.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="service-card" style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
-                    <div class="service-icon" style="width: 80px; height: 80px; background: #e6f4ff; border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 40px;">
-                        🏢
+                <div class="service-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                    <div style="height: 200px; overflow: hidden;">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/home/photo-1700124113583-81aa99ea2aa2" alt="Gebäudetechnik" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <h3 style="font-size: 24px; margin-bottom: 15px; color: #333;">Gebäudetechnik</h3>
-                    <p style="color: #666; font-size: 16px; line-height: 1.6;">
-                        Effiziente Lösungen für Lüftung, Heizung und Kälteanlagenbau.
-                    </p>
+                    <div style="padding: 30px; text-align: center;">
+                        <div class="service-icon" style="width: 70px; height: 70px; background: #e6f4ff; border-radius: 50%; margin: -50px auto 20px; display: flex; align-items: center; justify-content: center; font-size: 35px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                            🏢
+                        </div>
+                        <h3 style="font-size: 24px; margin-bottom: 15px; color: #333;">Gebäudetechnik</h3>
+                        <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                            Effiziente Lösungen für Lüftung, Heizung und Kälteanlagenbau.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="service-card" style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
-                    <div class="service-icon" style="width: 80px; height: 80px; background: #e6f4ff; border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 40px;">
-                        🔧
+                <div class="service-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                    <div style="height: 200px; overflow: hidden;">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/home/photo-1700124084147-995973b6a970" alt="Wartung & Service" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <h3 style="font-size: 24px; margin-bottom: 15px; color: #333;">Wartung & Service</h3>
-                    <p style="color: #666; font-size: 16px; line-height: 1.6;">
-                        Regelmäßige Wartung und schneller Service für Ihre Anlagen.
-                    </p>
+                    <div style="padding: 30px; text-align: center;">
+                        <div class="service-icon" style="width: 70px; height: 70px; background: #e6f4ff; border-radius: 50%; margin: -50px auto 20px; display: flex; align-items: center; justify-content: center; font-size: 35px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                            🔧
+                        </div>
+                        <h3 style="font-size: 24px; margin-bottom: 15px; color: #333;">Wartung & Service</h3>
+                        <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                            Regelmäßige Wartung und schneller Service für Ihre Anlagen.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,39 +92,33 @@ get_header();
         <div class="container" style="max-width: 1200px; margin: 0 auto;">
             <h2 style="text-align: center; font-size: 36px; margin-bottom: 20px; color: #333;">Kundenstimmen</h2>
             <p style="text-align: center; font-size: 18px; color: #666; margin-bottom: 50px;">
-                Echte Meinungen zu unserem Service
+                Echte Google-Bewertungen von zufriedenen Kunden
             </p>
 
-            <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card" style="background: #f8f9fa; padding: 30px; border-radius: 10px; border-left: 4px solid #667eea;">
-                    <p style="font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 20px; font-style: italic;">
-                        "Herr Wassong hat mich sehr gut beraten in Sachen Klimaanlagen und kam noch am selben Tag vorbei. Wir haben jetzt eine neue Klimaanlage und nutzen sie aktuell als Heizung. Vielen Dank nochmal!"
-                    </p>
-                    <div style="display: flex; align-items: center;">
-                        <div style="width: 50px; height: 50px; background: #667eea; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px;">
-                            N
-                        </div>
-                        <div>
-                            <p style="font-weight: 600; color: #333; margin: 0;">Nadine F.</p>
-                            <p style="color: #999; font-size: 14px; margin: 0;">Google Bewertung</p>
-                        </div>
-                    </div>
+            <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; max-width: 900px; margin: 0 auto;">
+                <!-- Testimonial 1 - Google Review Image -->
+                <div class="testimonial-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.1);">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/home/google-bewertung1-3DeKsyZ3oXTJOp59.png" alt="Google Bewertung von Nadine F." style="width: 100%; height: auto; display: block;">
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card" style="background: #f8f9fa; padding: 30px; border-radius: 10px; border-left: 4px solid #667eea;">
-                    <p style="font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 20px; font-style: italic;">
-                        "Super Service! Herr Wassong war sofort zur Stelle und hat unsere Klimaanlage professionell repariert. Sehr zu empfehlen!"
-                    </p>
-                    <div style="display: flex; align-items: center;">
-                        <div style="width: 50px; height: 50px; background: #764ba2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px;">
-                            M
-                        </div>
-                        <div>
-                            <p style="font-weight: 600; color: #333; margin: 0;">Michael S.</p>
-                            <p style="color: #999; font-size: 14px; margin: 0;">Google Bewertung</p>
-                        </div>
+                <!-- Testimonial 2 - Google Review Image -->
+                <div class="testimonial-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.1);">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/home/googlebewertung2-Dv2Vsr4gOsqjpyFT.png" alt="Google Bewertung" style="width: 100%; height: auto; display: block;">
+                </div>
+            </div>
+
+            <!-- Additional Text Testimonial -->
+            <div style="max-width: 800px; margin: 50px auto 0; background: #f8f9fa; padding: 40px; border-radius: 15px; border-left: 5px solid #667eea;">
+                <p style="font-size: 20px; line-height: 1.8; color: #555; margin-bottom: 20px; font-style: italic; text-align: center;">
+                    "Herr Wassong hat mich sehr gut beraten in Sachen Klimaanlagen und kam noch am selben Tag vorbei. Wir haben jetzt eine neue Klimaanlage und nutzen sie aktuell als Heizung. Vielen Dank nochmal!"
+                </p>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <div style="width: 60px; height: 60px; background: #667eea; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 20px; font-size: 24px;">
+                        N
+                    </div>
+                    <div>
+                        <p style="font-weight: 600; color: #333; margin: 0; font-size: 18px;">Nadine F.</p>
+                        <p style="color: #999; font-size: 16px; margin: 5px 0 0 0;">⭐⭐⭐⭐⭐ Google Bewertung</p>
                     </div>
                 </div>
             </div>
